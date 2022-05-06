@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+.LoginContainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:42%;
+    transform: translateY(-50%);
+    border:0.1px solid black;
+    padding:20px;
+    border-top: 5px solid blue;
+    border-radius: 2px;
+
+}
+.LoginInput{
+    width: 100px;
+    margin-top:10px;
+}
+
+.loginButton{
+    background: #1976D2;
+    width:50px;
+    margin-top:20px;
+    cursor: pointer;
+    font-size: 10px;
+    
+}
+
+.label{
+    font-size: 10px;
+    margin-left :0px !important;;
+}
