@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import { render } from "react-dom";
+import { useNavigate } from "react-router-dom";
 import {
   BrowserRouter,
   Routes,
@@ -9,14 +9,14 @@ import {
 } from "react-router-dom";
 
 import Login from './pages/Login';
+import CreateBill from './pages/CreateBill';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Login />}>
-       
-     
+      <Route path="/" element={<Login />}/>
+      <Route path="/CreateBill" element={<CreateBill />}>
       </Route>
     </Routes>
   </BrowserRouter>
