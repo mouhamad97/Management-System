@@ -1,5 +1,5 @@
 const path = require('path');
-
+const electron = require('electron')
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 
@@ -12,6 +12,7 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
+  win.setMenuBarVisibility(false);// removing the window menu 
 
   // and load the index.html of the app.
   // win.loadFile("index.html");

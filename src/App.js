@@ -1,12 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
-import LoginForm from './Components/LoginForm/LoginForm.jsx';
+import React from 'react';
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div className="App">
-    <LoginForm/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />}>
+       
+     
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
