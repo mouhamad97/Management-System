@@ -6,13 +6,20 @@ function BillingForm() {
             <h1 className='header'>Create New Bill</h1>
             <form action="" className='BillContainer'>
                 <label className='billLablel'>Installation Type</label>
-                <input className='BillInput' type="text" /><br />
+                <select  className='BillInput' name="" id="">
+                    <option value="solar system">solar system</option>
+                    <option value="solar system">security system</option>
+                    <option value="solar system">camera system</option>
+                </select>
                 <label className='billLablel'>Warranty Timeline</label>
                 <input className='BillInput' type="text" /><br />
                 <label className='billLablel'>Special Conditions</label>
                 <input className='BillInput' type="text" /><br />
                 <label className='billLablel'>Payment Type</label>
-                <input className='BillInput' type="text" /><br />
+                <select  className='BillInput' name="" id="">
+                    <option value="solar system">Cash</option>
+                    <option value="solar system">Payments</option>
+                </select>
                 <label className='billLablel'>Percentage</label>
                 <input className='BillInput' type="text" /><br />
                 <label className='billLablel'>Source</label>
@@ -22,7 +29,7 @@ function BillingForm() {
                 <label className='billLablel'>Installation Details</label>
                 <input className='BillInput' type="text" /><br />
                 <label className='billLablel'>Number Of plates</label>
-                <input className='BillInput' type="text" /><br />
+                <input className='BillInput' type="number" /><br />
                 <label className='billLablel'>Type Of Plates</label>
                 <input className='BillInput' type="text" /><br />
                 <label className='billLablel'>State of plates</label>

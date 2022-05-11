@@ -1,21 +1,27 @@
 import React from 'react'
 import './LoginForm.css'
 import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+
+
+
 function LoginForm() {
+
   let navigate = useNavigate();
-  const Enter =() =>{
-    navigate('/CreateBill')
-  }
+
   return (
     <div className='LoginContainer'>
         <form action="">
             <label className='label' htmlFor="email">Email</label> <br/>
-            <input type="text" name="email" placeholder='' className="LoginInput" id="" /> <br></br>
+            <input id="email" type="text" name="email" placeholder='' className="LoginInput" /> <br></br>
             <label  className='label' htmlFor="password">Password</label> <br/>
-            <input type="text" name="password"  placeholder=''className="LoginInput" id="" /><br/>
+            <input id="password" type="text" name="password"  placeholder=''className="LoginInput" /><br/>
             <button onClick={()=>{
-              navigate('/CreateBill')
+              let email = document.getElementById('email').value;
+              let password = document.getElementById('password').value;
+                if(email =="moe" && password ==123){
+                  navigate('/ClientsPage')
+                }
+           
             }} className="loginButton" value="LOGIN">LOGIN</button>
             
         </form>
