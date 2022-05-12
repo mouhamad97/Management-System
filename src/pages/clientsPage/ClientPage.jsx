@@ -1,11 +1,11 @@
 import React from 'react'
 import './ClientPage.css'
-
+import ClientsForm from '../../Components/ClientsForm/ClientsForm'
 function ClientPage() {
   return (
     <div>
         
-        <h1>Clients Page</h1>
+       <ClientsForm/>
 
     </div>
   )
