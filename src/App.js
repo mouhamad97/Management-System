@@ -6,18 +6,21 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
 import Login from './pages/Login';
-import CreateBill from './pages/CreateBill';
+import Transaction from './pages/Transaction/Transaction.jsx'
+import Maintenance from './pages/Maintenance/Maintenance.jsx'
 import ClientPage from './pages/clientsPage/ClientPage';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Login />}/>
-      <Route path="/CreateBill" element={<CreateBill />}/>
-      <Route path="/ClientsPage" element={<ClientPage />}/>
+
+        <Route path="/" element={<Login />}/>
+        <Route path="/clients" element={<ClientPage/>}/>
+        <Route path="/Transactions" element={<Transaction/>}/>
+        <Route path="/Maintenance" element={<Maintenance />}/>
+
     </Routes>
   </BrowserRouter>
   );

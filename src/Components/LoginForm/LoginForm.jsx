@@ -19,7 +19,7 @@ function LoginForm() {
               let email = document.getElementById('email').value;
               let password = document.getElementById('password').value;
                 if(email =="moe" && password ==123){
-                  navigate('/ClientsPage')
+                  navigate('/Transactions')
                 }
            
             }} className="loginButton" value="LOGIN">LOGIN</button>

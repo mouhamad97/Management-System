@@ -1,13 +1,13 @@
 import React from 'react'
 import './ClientPage.css'
-import ClientsForm from '../../Components/ClientsForm/ClientsForm'
 import ClientTable from '../../Components/ClientTable/ClientTable'
+import Layout from '../../Components/Layout'
 function ClientPage() {
   return (
     <div>
-        
-       {/* <ClientsForm/> */}
-       <ClientTable/>
+
+      <Layout />
+      <ClientTable />
 
     </div>
   )
